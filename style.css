@@ -1,0 +1,101 @@
+* {
+    box-sizing: content-box;
+    width: 100%;
+    font-family: 'Helvetica';
+}
+
+.header-parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 125px;
+    width: 25%;
+}
+
+.page-title {
+    width: 250px;
+    margin-top: 5px;
+}
+
+.name {
+    width: 250px;
+    margin-top: 21px;
+    margin-bottom: 2px;
+}
+
+.super-parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-parent {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    margin: 10px;
+
+}
+
+.resume-text, .projects-text, .contact-text, .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 2px solid #8FB569;
+    margin: 15px;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.pic-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 600px;
+    height: 600px;
+    background-image: url("https://i.imgur.com/RRw079b.png");
+    background-size: cover;
+}
+
+.cool-pic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .pic-size {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 300px;
+        height: 500px;
+        background-size: cover;
+        margin-left: 60px;
+        margin-top: -50px;
+    }
+    .row-small {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 50%;
+    }
+    .no-border-small {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 0px solid #fff;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        font-size: 10px;
+        padding: 0px;
+    }
