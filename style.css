@@ -258,6 +258,7 @@ header {
 .intro-image {
   box-shadow: var(--bs);
   width: inherit;
+  transform: translateX(-5%)
 }
 
 .intro-subtitle {
@@ -371,9 +372,14 @@ header {
 }
 
 .about-me-image {
-  width: 75%;
+  width: 80%;
   box-shadow: var(--bs);
   z-index: 2;
+  transform: translateY(10%)
+}
+
+.about-body {
+  font-size: .8em;
 }
 
 @media (min-width: 600px) {
@@ -400,6 +406,10 @@ header {
   .about-me-image {
     grid-area: img;
     position: relative;
+  }
+
+  .about-me-body {
+    font-size: 1em;
   }
 }
 
@@ -428,6 +438,7 @@ header {
 .portfolio-item {
   background: var(--clr-accent);
   overflow: hidden;
+  border: 1px solid var(--clr-dark);
 }
 
 .portfolio-img {
@@ -444,6 +455,11 @@ header {
 .portfolio-item:focus .portfolio-img {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+#portfolio-img-three,
+#portfolio-img-four {
+  border: 10px solid white;
 }
 
 /* FOOTER SECTION */
