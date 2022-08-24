@@ -41,7 +41,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   background: var(--clr-light);
   /* ^^ You can change this to 
@@ -178,7 +177,7 @@ header {
 }
 
 .nav-toggle {
-  padding: .5em;
+  padding: 0.5em;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -199,7 +198,7 @@ header {
 }
 
 .nav-open .nav-toggle {
-  transform: rotate(.625turn);
+  transform: rotate(0.625turn);
 }
 
 .nav-open .hamburger::before {
@@ -210,12 +209,11 @@ header {
   opacity: 0;
 }
 
-.nav-toggle:focus, .nav-toggle:active {
+.nav-toggle:focus,
+.nav-toggle:active {
   outline: 0;
   border: none;
 }
-
-
 
 .hamburger {
   display: block;
@@ -258,7 +256,6 @@ header {
 .intro-image {
   box-shadow: var(--bs);
   width: inherit;
-  transform: translateX(-5%)
 }
 
 .intro-subtitle {
@@ -278,6 +275,7 @@ header {
     width: 25%;
     margin-top: -3em;
     position: relative;
+    transform: translateX(-5%);
   }
 
   .intro-subtitle {
@@ -375,11 +373,11 @@ header {
   width: 80%;
   box-shadow: var(--bs);
   z-index: 2;
-  transform: translateY(10%)
+  transform: translateY(10%);
 }
 
 .about-body {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 @media (min-width: 600px) {
@@ -417,6 +415,7 @@ header {
 
 .my-work {
   text-align: center;
+  width: 100%;
 }
 
 .projects-subtitle {
@@ -430,9 +429,11 @@ header {
   object-fit: inherit;
 }
 
-.portfolio-main-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+@media (min-width: 600px) {
+  .portfolio-main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 
 .portfolio-item {
