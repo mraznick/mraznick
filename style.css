@@ -13,7 +13,7 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: rgb(244, 229, 243);
+  --clr-light: #d0bfaa;
   /* --clr-light: rgb(251, 253, 230); */
   --clr-dark: #5e3405;
   --clr-accent: #a3cb7e;
@@ -42,10 +42,10 @@ html {
 }
 
 body {
-  background: var(--clr-light);
+  background: rgb(47, 57, 29);
   /* ^^ You can change this to 
   any of the colors in the root property above */
-  color: var(--clr-dark);
+  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -124,6 +124,7 @@ h3 {
 .section-subtitle {
   margin: 0;
   font-size: var(--fs-h3);
+  color: var(--clr-dark);
 }
 
 .intro-subtitle,
