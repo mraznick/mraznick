@@ -303,6 +303,10 @@ header {
   }
 }
 
+#resume-image {
+  transform: translateY(5%);
+}
+
 /* SERVICES */
 
 .my-services {
@@ -508,4 +512,38 @@ footer a {
 
 .social-list-link {
   padding: 0.5em;
+}
+
+/* RESUME PAGE */
+
+.resume-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-10%);
+}
+
+.resume-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background: none;
+}
+
+#resume-intro {
+  transform: translateY(-8%);
+}
+
+#resume-image {
+  width: 300px;
+}
+
+#resume-subtitle {
+  transform: translateY(-5%);
+}
+
+#resume {
+  width: 100%;
 }
