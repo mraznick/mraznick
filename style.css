@@ -247,7 +247,7 @@ header {
   bottom: 6px;
 }
 
-/* INTRO SECTION FOR SMALL SCREENS; ADJUST HERE A BIT */
+/* INTRO SECTION */
 
 .intro {
   position: relative;
@@ -303,9 +303,6 @@ header {
   }
 }
 
-#resume-image {
-  transform: translateY(5%);
-}
 
 /* SERVICES */
 
@@ -400,7 +397,7 @@ header {
     grid-area: title;
   }
 
-  .about-subtitle {
+  .about-subtitle, #resume-subtitle {
     grid-column: 1 / -1;
     grid-row: 2;
     transform: translateX(-2em);
@@ -546,4 +543,19 @@ footer a {
 
 #resume {
   width: 100%;
+}
+
+#resume-image {
+  transform: translateY(5%);
+}
+
+@media (min-width: 600px) and (max-width: 1500px) {
+  #resume-subtitle {
+    display: none;
+  }
+
+  #resume-image {
+    transform: translateY(12%);
+  }
+
 }
