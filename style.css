@@ -431,7 +431,8 @@ header {
 }
 
 .about-body {
-  font-size: 0.9em;
+  font-size: 1.2em;
+  margin-bottom: 0;
 }
 
 @media (min-width: 600px) {
