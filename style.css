@@ -485,6 +485,23 @@ header {
   object-fit: inherit;
 }
 
+.portfolio-main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.project-img-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 @media (min-width: 600px) {
   .portfolio-main-container {
     display: grid;
