@@ -498,6 +498,7 @@ header {
 
 .project-img-container {
   width: 45%;
+  height: 100%;
   float: left;
   display: flex;
 }
